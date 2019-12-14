@@ -1,0 +1,6 @@
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\bin\Tools\Pinball.dll
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\bin\Tools\Pinball.pdb
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\obj\Tools\Pinball.csprojAssemblyReference.cache
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\obj\Tools\Pinball.csproj.CoreCompileInputs.cache
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\obj\Tools\Pinball.dll
+C:\Users\Nitrogendragon\Godot\Games\Pinball\.mono\temp\obj\Tools\Pinball.pdb
