@@ -24,7 +24,7 @@ public class RightFlipperAxel : Node2D
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        RotationSpeed = 12;
+        RotationSpeed = 5;
     }
 
  // Called every frame. 'delta' is the elapsed time since the previous frame.

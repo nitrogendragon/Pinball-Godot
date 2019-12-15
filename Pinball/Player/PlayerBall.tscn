@@ -3,7 +3,7 @@
 [ext_resource path="res://Assets/PlayerBall.png" type="Texture" id=1]
 
 [sub_resource type="PhysicsMaterial" id=1]
-bounce = 0.1
+bounce = 0.2
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 80.1561
@@ -12,6 +12,7 @@ radius = 80.1561
 mass = 4.0
 physics_material_override = SubResource( 1 )
 gravity_scale = 3.0
+continuous_cd = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.2, 0.2 )

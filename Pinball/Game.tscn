@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Floor/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/PlayerBall.tscn" type="PackedScene" id=2]
@@ -6,6 +6,18 @@
 [ext_resource path="res://Flippers/LeftFlipper.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Flippers/LeftFlipperAxel.cs" type="Script" id=5]
 [ext_resource path="res://Flippers/RightFlipper.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/tempborder.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 546, 32 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -449, -299 )
+b = Vector2( -450, 168 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 449, -306 )
+b = Vector2( 453, 166 )
 
 [node name="Game" type="Node2D"]
 
@@ -14,6 +26,7 @@ position = Vector2( 509.012, 522.059 )
 
 [node name="PlayerBall" parent="." instance=ExtResource( 2 )]
 position = Vector2( 886, 291 )
+gravity_scale = 40.0
 
 [node name="RightFlipperAxel" type="Node2D" parent="."]
 position = Vector2( 940, 350 )
@@ -30,3 +43,21 @@ script = ExtResource( 5 )
 [node name="RightFlipper" parent="LeftFlipperAxel" instance=ExtResource( 6 )]
 position = Vector2( 190, 35 )
 rotation = 0.174533
+
+[node name="Border" type="StaticBody2D" parent="."]
+position = Vector2( 515, 278 )
+
+[node name="Sprite" type="Sprite" parent="Border"]
+position = Vector2( 6.00001, -54 )
+scale = Vector2( 11.6, 4.42 )
+texture = ExtResource( 7 )
+
+[node name="ColliderTop" type="CollisionShape2D" parent="Border"]
+position = Vector2( 1, -253 )
+shape = SubResource( 4 )
+
+[node name="ColliderLeft" type="CollisionShape2D" parent="Border"]
+shape = SubResource( 2 )
+
+[node name="ColliderRight" type="CollisionShape2D" parent="Border"]
+shape = SubResource( 3 )
