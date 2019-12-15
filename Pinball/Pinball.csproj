@@ -49,6 +49,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Flippers\LeftFlipperAxel.cs" />
+    <Compile Include="Flippers\RightFlipperAxel.cs" />
     <Compile Include="Player\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
