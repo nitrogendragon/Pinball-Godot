@@ -1,8 +1,30 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Floor/Floor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/PlayerBall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Flippers/LeftFlipper.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Flippers/RightFlipper.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 522.767, 252.198 )
+[node name="Floor" parent="." instance=ExtResource( 1 )]
+position = Vector2( 509.012, 522.059 )
+
+[node name="PlayerBall" parent="." instance=ExtResource( 2 )]
+position = Vector2( 886, 291 )
+
+[node name="LeftFlipperAxel" type="Node2D" parent="."]
+position = Vector2( 940, 350 )
+
+[node name="LeftFlipper" parent="LeftFlipperAxel" instance=ExtResource( 3 )]
+position = Vector2( -190, 35 )
+rotation = -0.174533
+scale = Vector2( 1, 1 )
+
+[node name="RightFlipperAxel" type="Node2D" parent="."]
+position = Vector2( 85, 350 )
+
+[node name="RightFlipper" parent="RightFlipperAxel" instance=ExtResource( 4 )]
+position = Vector2( 190, 35 )
+rotation = 0.174533
+scale = Vector2( 1, 1 )

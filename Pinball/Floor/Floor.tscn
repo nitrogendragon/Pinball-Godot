@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/floor.png" type="Texture" id=1]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( 508.702, -78.2349 )
+b = Vector2( -507.472, -74.7187 )
+
+[node name="Floor" type="StaticBody2D"]
+position = Vector2( 485.232, 494.022 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
