@@ -2,16 +2,18 @@
 
 [ext_resource path="res://Assets/flipper.png" type="Texture" id=1]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 213, 12.7105 )
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 13.7001
+height = 411.052
 
-[node name="RightFlipper" type="KinematicBody2D"]
-motion/sync_to_physics = true
+[node name="LeftFlipper" type="KinematicBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 5, -2 )
-rotation = 0.0174533
+position = Vector2( 7.9563, -1.94528 )
+rotation = 1.58825
+z_index = 1
 shape = SubResource( 1 )
+one_way_collision_margin = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
