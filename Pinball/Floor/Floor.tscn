@@ -7,7 +7,7 @@ a = Vector2( 508.702, -78.2349 )
 b = Vector2( -507.472, -74.7187 )
 
 [node name="Floor" type="StaticBody2D"]
-position = Vector2( 485.232, 494.022 )
+position = Vector2( 483.474, 494.022 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )

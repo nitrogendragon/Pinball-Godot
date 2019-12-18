@@ -6,7 +6,7 @@
 bounce = 0.2
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 80.1561
+radius = 80.6226
 
 [node name="PlayerBall" type="RigidBody2D"]
 mass = 4.0

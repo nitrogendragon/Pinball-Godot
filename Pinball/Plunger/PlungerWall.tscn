@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/plunger_wall.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 12.7215, 67.4527 )
 
 [node name="PlungerWall" type="Node2D"]
 
@@ -8,6 +11,8 @@
 position = Vector2( 939.027, 699.404 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -17.9124, 33.1711 )
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="StaticBody2D"]
 texture = ExtResource( 1 )

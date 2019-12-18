@@ -52,6 +52,7 @@
     <Compile Include="Flippers\LeftFlipperAxel.cs" />
     <Compile Include="Flippers\RightFlipperAxel.cs" />
     <Compile Include="Player\Player.cs" />
+    <Compile Include="Plunger\KinematicBody2D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
